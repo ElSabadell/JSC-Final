@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.h1-home {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#navbar {
+    background-color: #333;
+    position: fixed;
+    top: -60px;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+a {
+    text-decoration: none !important;
+    transition: all .5s linear;
+}
+
+a:hover {
+    color: rgb(182, 182, 182) !important;
+}
+
+.down-arrow {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border: 1px solid rgb(182, 182, 182);
+    width: 0px;
+    height: 00px;
+    border-radius: 50px;
+    transition: all .2s linear;
+}
+
+.down-arrow:hover {
+    animation: glow 1s ease-in-out infinite alternate;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+}
+
+.fa-chevron-down {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: rgb(182, 182, 182);
+    font-size: 20px;
+    transition: all .2s linear;
+}
+
+.fa-chevron-down:hover {
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 8px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+    }
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0073e6, 0 0 40px #0073e6, 0 0 50px #0073e6, 0 0 60px #0073e6, 0 0 70px #0073e6;
+    }
+}
+
+.vertical-line {
+    width: 1px;
+    height: 20vh;
+    background-color: rgb(182, 182, 182);
+    position: absolute;
+    top: 105.6%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.hLine1 {
+    height: 1px;
+    width: 46%;
+    background-color: rgb(182, 182, 182);
+    position: absolute;
+    top: 115.7%;
+    left: 27%;
+    transform: translateX(-50%) translateY(-50%);
+}
