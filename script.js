@@ -5,6 +5,21 @@ function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("navbar").style.top = "0";
   } else {
-    document.getElementById("navbar").style.top = "-60px";
+    document.getElementById("navbar").style.top = "-1000px";
   }
 }
+
+
+
+var scene = document.getElementById('scene');
+var parallaxInstance = new Parallax(scene, {
+    relativeInput: true
+});
+
+var scene = document.getElementById('scene2');
+var parallaxInstance = new Parallax(scene, {
+    relativeInput: true
+});
+
+
+
